@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    internal class Rectangle : Shape, IArea, IPerimeter
+    public class Rectangle : Shape, IArea, IPerimeter
     {
         public Rectangle(double height, double width)
         {
