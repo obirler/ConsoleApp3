@@ -27,8 +27,8 @@ namespace ConsoleApp3
 
         public double GetArea()
         {
-            //return Height * Width;
-            return Height * Height;
+            return Height * Width;
+            //return Height * Height;
         }
 
         public double GetPerimeter()
