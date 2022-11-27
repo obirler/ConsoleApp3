@@ -13,7 +13,10 @@ namespace ConsoleApp3
             Height = height;
             Width = width;
             Center = new System.Drawing.PointF(0, 0);
+            SomeParameter = Height * Height;
         }
+
+        public double SomeParameter;
 
         public double Height;
 
