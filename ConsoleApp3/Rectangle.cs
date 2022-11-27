@@ -6,18 +6,27 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp3
 {
-    internal class Rectangle : Shape
+    internal class Rectangle : Shape, IArea, IPerimeter
     {
         public Rectangle(double height, double width)
         {
             Height = height;
             Width = width;
-            Area = Height * Width;
-            Perimeter = 2 * (Height + Width);
+            Center = new System.Drawing.PointF(0, 0);
         }
 
         public double Height;
 
         public double Width;
+
+        public double GetArea()
+        {
+            return Height * Width;
+        }
+
+        public double GetPerimeter()
+        {
+            return 2 *(Height + Width);
+        }
     }
 }
