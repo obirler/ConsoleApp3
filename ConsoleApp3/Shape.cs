@@ -7,7 +7,7 @@ using System.Drawing;
 
 namespace ConsoleApp3
 {
-    internal class Shape
+    public class Shape
     {
         public PointF Center;
     }
